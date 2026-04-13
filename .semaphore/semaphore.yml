@@ -25,3 +25,5 @@ blocks:
             - 'docker tag myapp zgrahovac/myapp:semaphore2'
             - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
             - 'docker push zgrahovac/myapp:semaphore2'
+      secrets:
+        - name: DOCKER_ZGR
